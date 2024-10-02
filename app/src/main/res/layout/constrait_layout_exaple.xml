@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/flower_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imageflower"/>
+
+    <TextView android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/flower_image_view"
+        android:layout_margin="16sp"
+        android:textSize="24sp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#6941BF"
+        android:textStyle="bold"
+        android:text="Passiflora incarnata"/>
+
+
+    <TextView android:id="@+id/year_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title_text_view"
+        app:layout_constraintRight_toLeftOf="@id/place_text_view"
+        android:layout_margin="16sp"
+        android:textSize="12sp"
+        android:textColor="#17261B"
+        android:textStyle="italic"
+        android:text="2024/10/02"/>
+
+    <TextView android:id="@+id/place_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16sp"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:background="#17261B"
+        android:text="Vitoria"/>
+
+    <TextView
+        android:id="@+id/description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/year_text_view"
+        android:layout_marginTop="16sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:lineSpacingExtra="8sp"
+        android:text="Passiflora incarnata es una planta trepadora de rápido crecimiento perteneciente al género Passiflora conocido comúnmente como flores de la pasión. Su principal característica es la peculiar forma de sus flores. Es una liana trepadora pubescente que alcanza los 6-9 metros de largo. Tiene unos zarcillos que le sirven para trepar." />
+
+    <Button
+        android:id="@+id/next_button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/description_text_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="#77A632"
+        android:text="next"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
