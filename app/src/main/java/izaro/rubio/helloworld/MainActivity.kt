@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("HelloWorld", "IZARO onCreate" )
 
-        binding.helloworldView.text= "hola a todos"
+        binding.titleTextView.text= "IT'S YOUR BIRTHDAY"
+        binding.yearsTextView.text= "42 YEARS?!"
 
     }
 
