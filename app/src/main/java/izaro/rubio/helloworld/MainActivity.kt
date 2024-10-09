@@ -1,7 +1,9 @@
 package izaro.rubio.helloworld
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,11 +27,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //NAVEGAR CON BOTONES
+        binding.helloWorldButton.setOnClickListener {
+            val intent = Intent(this, UsuarioActivity::class.java)
+            startActivity(intent)
+        }
+        binding.birthdayButton.setOnClickListener {
+            val intent = Intent(this, BirthdayActivity::class.java)
+            startActivity(intent)
+        }
 
-        Log.d("HelloWorld", "IZARO onCreate" )
-
-        binding.titleTextView.text= "IT'S YOUR BIRTHDAY"
-        binding.yearsTextView.text= "42 YEARS?!"
+        //Log.d("HelloWorld", "IZARO onCreate" )
 
     }
 
