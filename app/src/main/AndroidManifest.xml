@@ -13,20 +13,27 @@
         android:theme="@style/Theme.HelloWorld"
         tools:targetApi="31">
         <activity
+            android:name=".listPackage.ListItemActivity"
+            android:exported="false"
+            android:parentActivityName=".ListActivity" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
+        <activity
             android:name=".UsuarioSaludoActivity"
             android:exported="true"
-            android:label= "Saludo a Usuario"
-            android:parentActivityName=".UsuarioActivity"/>
+            android:label="Saludo a Usuario"
+            android:parentActivityName=".UsuarioActivity" />
         <activity
             android:name=".UsuarioActivity"
             android:exported="true"
-            android:label= "Introducir Usuario"
-            android:parentActivityName=".MainActivity"/>
+            android:label="Introducir Usuario"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".BirthdayActivity"
             android:exported="true"
-            android:label= "Happy Birthday"
-            android:parentActivityName=".MainActivity"/>
+            android:label="Happy Birthday"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

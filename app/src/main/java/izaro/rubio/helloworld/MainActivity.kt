@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, BirthdayActivity::class.java)
             startActivity(intent)
         }
+        binding.listButton.setOnClickListener {
+            val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
+        }
 
         //Log.d("HelloWorld", "IZARO onCreate" )
 
