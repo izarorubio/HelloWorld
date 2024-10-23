@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import izaro.rubio.helloworld.databinding.RowItemBinding
 
-class CustomAdapter(private val dataSet: Array<ShopItem>, private val listener: ItemListener) :
+class CustomAdapter(private val dataSet: MutableList<ShopItem>, private val listener: ItemListener) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: RowItemBinding):RecyclerView.ViewHolder(binding.root){
@@ -37,6 +37,12 @@ class CustomAdapter(private val dataSet: Array<ShopItem>, private val listener: 
     }
 
     override fun getItemCount()= dataSet.size
+
+    fun updateData(newDataSet: MutableList<ShopItem>) {
+        dataSet.clear()
+        dataSet.addAll(newDataSet)
+        notifyDataSetChanged()
+    }
 }
 
 interface ItemListener{

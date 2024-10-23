@@ -12,13 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld"
         tools:targetApi="31">
+
+        <activity
+            android:name=".listPackage.AddShopItemActivity"
+            android:exported="true"
+            android:parentActivityName=".ListActivity" />
         <activity
             android:name=".listPackage.ListItemActivity"
-            android:exported="false"
+            android:exported="true"
             android:parentActivityName=".ListActivity" />
         <activity
             android:name=".ListActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".UsuarioSaludoActivity"
             android:exported="true"
