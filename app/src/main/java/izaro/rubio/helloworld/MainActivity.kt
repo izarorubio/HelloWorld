@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import izaro.rubio.helloworld.databinding.ActivityMainBinding
+import izaro.rubio.helloworld.redPackage.RedActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,6 +39,11 @@ class MainActivity : AppCompatActivity() {
         }
         binding.listButton.setOnClickListener {
             val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.redButton.setOnClickListener {
+            val intent = Intent(this, RedActivity::class.java)
             startActivity(intent)
         }
 
