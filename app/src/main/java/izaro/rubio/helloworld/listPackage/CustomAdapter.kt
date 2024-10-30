@@ -19,8 +19,12 @@ class CustomAdapter(private val dataSet: MutableList<ShopItem>, private val list
             }
         }
         fun bind(item: ShopItem){
-            currentItem= item
-            binding.rowItemText.text= "${item.name} - ${item.quantity}"
+            currentItem = item
+            // Muestra solo el nombre si quantity es null
+            binding.rowItemText.text = if (item.quantity != null) {"${item.name} - ${item.quantity}"
+            } else {
+                item.name
+            }
         }
     }
 

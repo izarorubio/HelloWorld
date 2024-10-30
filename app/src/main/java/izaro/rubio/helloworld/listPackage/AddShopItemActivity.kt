@@ -3,6 +3,7 @@ package izaro.rubio.helloworld.listPackage
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -31,18 +32,25 @@ class AddShopItemActivity : AppCompatActivity() {
         // Configura un listener para guardar los datos
         binding.saveButton.setOnClickListener {
             val name = binding.itemNameEditText.text.toString()
-            val quantity = binding.itemQuantityEditText.text.toString().toIntOrNull() ?: 0
+            val quantity = binding.itemQuantityEditText.text.toString().toIntOrNull()
 
-            val shopItem = ShopItem(name, quantity)
-
-            // Crear un intent con el resultado (para devolverlo)
-            val resultIntent = Intent() // Crear un intent
-            resultIntent.putExtra("SHOP_ITEM_KEY", shopItem) //Guarda como extra el resultado
-            setResult(RESULT_OK, resultIntent) //Indicamos que ha ido bien
-            finish() // Finalizar Activity
+            // Verificación del campo name para evitar elementos sin nombre
+            if (name.isBlank()) {
+                Toast.makeText(
+                    this,
+                    "ERROR: indicar el nombre del producto es obligatorio",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                // Si el nombre no está vacío, se continúa con el guardado
+                val shopItem = ShopItem(name, quantity) // Usa -1 para indicar que quantity no fue provisto
+                val resultIntent = Intent() // Crear un intent
+                resultIntent.putExtra("SHOP_ITEM_KEY", shopItem) //Guarda como extra el resultado
+                setResult(RESULT_OK, resultIntent) //Indicamos que ha ido bien
+                finish() // Finalizar Activity
+            }
         }
     }
-
     companion object {
         fun getCallingIntent(context: Context): Intent {
             return Intent(context, AddShopItemActivity::class.java)
