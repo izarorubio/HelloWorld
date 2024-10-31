@@ -13,16 +13,16 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop= "100sp"
-        android:hint="item name"
-        android:inputType="textMultiLine"/>
+        android:inputType="textMultiLine"
+        android:hint="@string/product_name_hint"/>
 
     <EditText
         android:id="@+id/item_quantity_editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/item_name_editText"
-        android:hint="quantity"
-        android:inputType="textMultiLine"/>
+        android:inputType="textMultiLine"
+        android:hint="@string/product_quantity_hint"/>
 
     <Button
         android:id="@+id/save_button"
@@ -33,6 +33,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="30sp"
         android:backgroundTint="#77A632"
-        android:text="SAVE"/>
+        android:text="@string/save_button_text"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

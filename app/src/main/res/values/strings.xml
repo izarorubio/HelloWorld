@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">HelloWorld</string>
+
+    <!-- TEXTOS DEL MAINACTIVITY -->
+    <string name="birthday_button_text">TARJETA DE CUMPLEAÑOS</string>
+    <string name="list_button_text">LISTA DE LA COMPRA</string>
+    <string name="red_button_text">LLAMADA A RED</string>
+
+    <!-- TEXTOS DEL USUARIOACTIVITY -->
+    <string name="writeName_text">Hola, escribe tu nombre abajo</string>
+    <string name="writeName_name_hint">Nombre</string>
+    <string name="done_buttom_text">Hecho</string>
+
+    <!-- TEXTOS DEL USUARIOSALUDOACTIVITY -->
+    <string name="saludo_text">Hola </string>
+
+    <!-- Mensaje de error para nombre vacío -->
+    <string name="error_name_required">ERROR: indicar el nombre del producto es obligatorio</string>
+
+    <!-- Etiquetas de botones y campos -->
+    <string name="save_button_text">Guardar</string>
+    <string name="product_name_hint">Nombre del producto</string>
+    <string name="product_quantity_hint">Cantidad</string>
+
+    <!-- Texto del botón de añadir un elemento -->
+    <string name="add_item_button_text">Añadir Producto</string>
+
+
 </resources>

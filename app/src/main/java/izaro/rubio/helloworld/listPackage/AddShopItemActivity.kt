@@ -29,6 +29,13 @@ class AddShopItemActivity : AppCompatActivity() {
             insets
         }
 
+        //Textos:
+        binding.saveButton.text = getString(R.string.save_button_text)
+        binding.itemNameEditText.hint = getString(R.string.product_name_hint)
+        binding.itemQuantityEditText.hint = getString(R.string.product_quantity_hint)
+
+
+
         // Configura un listener para guardar los datos
         binding.saveButton.setOnClickListener {
             val name = binding.itemNameEditText.text.toString()
@@ -38,7 +45,7 @@ class AddShopItemActivity : AppCompatActivity() {
             if (name.isBlank()) {
                 Toast.makeText(
                     this,
-                    "ERROR: indicar el nombre del producto es obligatorio",
+                    getString(R.string.error_name_required),
                     Toast.LENGTH_SHORT
                 ).show()
             } else {

@@ -16,7 +16,7 @@
         android:textAppearance="?android:textAppearanceLarge"
         android:textColor="#6941BF"
         android:textStyle="bold"
-        android:text="Hola "/>
+        android:text="@string/saludo_text"/>
 
     <ImageView
         android:id="@+id/flower_image_view"

@@ -27,7 +27,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop= "16sp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="Happy Birthday"/>
+        android:text="@string/birthday_button_text"/>
 
     <Button
         android:id="@+id/list_button"
@@ -38,7 +38,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop= "16sp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="List"/>
+        android:text="@string/list_button_text"/>
 
     <Button
         android:id="@+id/red_button"
@@ -49,7 +49,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop= "16sp"
         android:backgroundTint="@color/colorPrimary"
-        android:text="Red"/>
+        android:text="@string/red_button_text"/>
 
 
 

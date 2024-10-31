@@ -28,7 +28,7 @@ class ListItemActivity : AppCompatActivity() {
         val shopItem = intent.getParcelableExtra<ShopItem>("SHOP_ITEM")
         //Mostrar item
         shopItem?.let{
-            binding.elementText.text = "${it.name}: ${it.quantity} unidades"
+            binding.elementText.text = "${it.name}: ${it.quantity}"
         }
     }
 }
