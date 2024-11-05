@@ -28,8 +28,6 @@ class UsuarioActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        //Mostrar pequeño popup
-        Toast.makeText(this, getString(R.string.toast_name_mandatory), Toast.LENGTH_LONG).show()
 
         //Ir a UsuarioSaludoActivity cuando se pulsa el boton
         binding.doneButton.setOnClickListener {

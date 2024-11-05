@@ -15,7 +15,7 @@
     <!-- TEXTOS DEL USUARIOSALUDOACTIVITY -->
     <string name="saludo_text">¡Hello %1$s, welcome to my new app!</string>
     <!-- TEXTOS DEL BIRTHDAYACTIVITY -->
-    <string name="happy_birthday_text">¡HAPPY BIRTHDAY!</string>
+    <string name="happy_birthday_text">HAPPY BIRTHDAY!</string>
     <string name="years_text">42 YEARS!?</string>
 
     <!-- Mensaje de error para nombre vacío -->
@@ -28,6 +28,15 @@
 
     <!-- Texto del botón de añadir un elemento -->
     <string name="add_item_button_text">Add Item</string>
+
+    <!-- TEXTOS ACTIBITY BAR -->
+    <string name="usuarioActivity_label">Enter User</string>
+    <string name="usuarioSaludoActivity_label">Hello User</string>
+    <string name="birthdayActivity_label">Birthday Card</string>
+    <string name="listActivity_label">Shopping List</string>
+    <string name="listItemActivity_label">Shop Item</string>
+    <string name="addShopItemActivity_label">Add Shop Item</string>
+    <string name="redActivity_label">Network Call</string>
 
 
 </resources>

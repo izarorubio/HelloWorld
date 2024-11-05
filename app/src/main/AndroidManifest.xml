@@ -18,33 +18,37 @@
         <activity
             android:name=".redPackage.RedActivity"
             android:exported="true"
+            android:label="@string/redActivity_label"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".listPackage.AddShopItemActivity"
             android:exported="true"
+            android:label="@string/add_item_button_text"
             android:parentActivityName=".ListActivity" />
         <activity
             android:name=".listPackage.ListItemActivity"
             android:exported="true"
+            android:label="@string/listItemActivity_label"
             android:parentActivityName=".ListActivity" />
         <activity
             android:name=".ListActivity"
             android:exported="false"
+            android:label="@string/listActivity_label"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".UsuarioSaludoActivity"
             android:exported="true"
-            android:label="Saludo a Usuario"
+            android:label="@string/usuarioSaludoActivity_label"
             android:parentActivityName=".UsuarioActivity" />
         <activity
             android:name=".UsuarioActivity"
             android:exported="true"
-            android:label="Introducir Usuario"
+            android:label="@string/usuarioActivity_label"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".BirthdayActivity"
             android:exported="true"
-            android:label="Happy Birthday"
+            android:label="@string/birthdayActivity_label"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
