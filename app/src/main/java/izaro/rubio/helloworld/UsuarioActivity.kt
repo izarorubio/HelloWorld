@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import izaro.rubio.helloworld.databinding.ActivityMainBinding
 import izaro.rubio.helloworld.databinding.ActivityUsuarioBinding
+import izaro.rubio.helloworld.listPackage.ShopItem
 
 class UsuarioActivity : AppCompatActivity() {
     private lateinit var binding:ActivityUsuarioBinding
@@ -28,17 +29,28 @@ class UsuarioActivity : AppCompatActivity() {
             insets
         }
         //Mostrar pequeño popup
-        Toast.makeText(this, "Name field is mandatory", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, getString(R.string.toast_name_mandatory), Toast.LENGTH_LONG).show()
+
         //Ir a UsuarioSaludoActivity cuando se pulsa el boton
         binding.doneButton.setOnClickListener {
+
             // Obtener el texto ingresado en el EditText(asegurar que es String porque si no no funciona)
             val username = binding.writeNameEditText.text.toString()
-            // Crear el Intent para pasar a la otra actividad
-            val intent = Intent(this, UsuarioSaludoActivity::class.java)
-            intent.putExtra("usernameKey", username) //parametro1: key única en formato String, parametro2:  dato que queremos enviar
-            //Empezar la nueva actividad
-            startActivity(intent)
+            // Verificar si el campo de nombre está vacío
+            if (username.isEmpty()) {
+                // Mostrar el Toast si el campo está vacío
+                Toast.makeText(this, getString(R.string.toast_name_mandatory), Toast.LENGTH_LONG)
+                    .show()
+            } else {
+                // Si el campo no está vacío, crear el Intent para pasar a la otra actividad
+                val intent = Intent(this, UsuarioSaludoActivity::class.java)
+                intent.putExtra(
+                    "usernameKey",
+                    username
+                ) // parámetro1: key única, parámetro2: dato que queremos enviar
+                // Empezar la nueva actividad
+                startActivity(intent)
+            }
         }
-
     }
 }

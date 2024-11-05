@@ -11,20 +11,20 @@
         android:id="@+id/writeName_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100sp"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="12sp"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:textColor="#6941BF"
+        android:textSize="16sp"
+        android:layout_margin="10sp"
+        android:textColor="@color/black"
         android:text="@string/writeName_text"/>
 
     <EditText
         android:id="@+id/writeName_editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/writeName_text"
-        android:layout_marginTop= "20sp"
+        app:layout_constraintTop_toBottomOf="@id/writeName_text"
+        android:layout_margin="10sp"
         android:inputType="textMultiLine"
+        android:textSize="20sp"
         android:hint="@string/writeName_name_hint"/>
 
     <Button
@@ -34,8 +34,9 @@
         app:layout_constraintTop_toBottomOf="@id/writeName_editText"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="30sp"
-        android:backgroundTint="#77A632"
+        android:layout_marginTop="20sp"
+        android:padding="15sp"
+        android:backgroundTint="@color/colorSecondary"
         android:text="@string/done_buttom_text"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

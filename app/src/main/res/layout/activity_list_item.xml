@@ -10,10 +10,9 @@
     <TextView android:id="@+id/element_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100sp"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="24sp"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:textColor="#6941BF"/>
+        android:layout_margin="30sp"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

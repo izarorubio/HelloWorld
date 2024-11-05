@@ -18,7 +18,7 @@
         <activity
             android:name=".redPackage.RedActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".listPackage.AddShopItemActivity"
             android:exported="true"

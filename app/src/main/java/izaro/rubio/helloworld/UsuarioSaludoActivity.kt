@@ -27,7 +27,9 @@ class UsuarioSaludoActivity : AppCompatActivity() {
         }
         // Obtener los extras del Intent guardado
         val username = intent.extras!!.getString("usernameKey")
+        // Obtener el saludo formateado desde strings.xml
+        val saludo = getString(R.string.saludo_text, username)
         //Mostrar saludo
-        binding.saludoText.text = "Hola $username"
+        binding.saludoText.text = saludo
     }
 }

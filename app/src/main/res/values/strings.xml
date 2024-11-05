@@ -10,9 +10,13 @@
     <string name="writeName_text">Hola, escribe tu nombre abajo</string>
     <string name="writeName_name_hint">Nombre</string>
     <string name="done_buttom_text">Hecho</string>
+    <string name="toast_name_mandatory">El campo Nombre es obligatorio</string>
 
     <!-- TEXTOS DEL USUARIOSALUDOACTIVITY -->
-    <string name="saludo_text">Hola </string>
+    <string name="saludo_text">¡Hola %1$s, estás en mi nueva app!</string>
+    <!-- TEXTOS DEL BIRTHDAYACTIVITY -->
+    <string name="happy_birthday_text">¡FELIZ CUMPLEAÑOS!</string>
+    <string name="years_text">¿¡42 AÑOS!?</string>
 
     <!-- Mensaje de error para nombre vacío -->
     <string name="error_name_required">ERROR: indicar el nombre del producto es obligatorio</string>

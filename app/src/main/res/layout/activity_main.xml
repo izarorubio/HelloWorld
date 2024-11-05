@@ -9,46 +9,55 @@
 
     <Button
         android:id="@+id/helloWorld_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop= "50sp"
-        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginRight= "16sp"
+        android:layout_marginLeft= "16sp"
+        android:padding="30sp"
+        android:backgroundTint="@color/colorPrimaryVariant"
         android:text="Hello World"/>
 
     <Button
         android:id="@+id/birthday_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/helloWorld_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop= "16sp"
-        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginRight= "16sp"
+        android:layout_marginLeft= "16sp"
+        android:padding="30sp"
+        android:backgroundTint="@color/colorPrimaryVariant"
         android:text="@string/birthday_button_text"/>
 
     <Button
         android:id="@+id/list_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/birthday_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop= "16sp"
-        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginRight= "16sp"
+        android:layout_marginLeft= "16sp"
+        android:padding="30sp"
+        android:backgroundTint="@color/colorPrimaryVariant"
         android:text="@string/list_button_text"/>
 
     <Button
         android:id="@+id/red_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/list_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop= "16sp"
-        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginRight= "16sp"
+        android:layout_marginLeft= "16sp"
+        android:padding="30sp"
+        android:backgroundTint="@color/colorPrimaryVariant"
         android:text="@string/red_button_text"/>
 
 

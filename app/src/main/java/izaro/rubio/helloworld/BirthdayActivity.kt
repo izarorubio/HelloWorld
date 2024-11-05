@@ -27,7 +27,7 @@ class BirthdayActivity : AppCompatActivity() {
             insets
         }
 
-        binding.titleTextView.text= "IT'S YOUR BIRTHDAY"
-        binding.yearsTextView.text= "42 YEARS?!"
+        binding.titleTextView.text= getString(R.string.happy_birthday_text)
+        binding.yearsTextView.text= getString(R.string.years_text)
     }
 }
