@@ -27,8 +27,12 @@ class ListItemActivity : AppCompatActivity() {
         // Obtener los extras del Intent guardado
         val shopItem = intent.getParcelableExtra<ShopItem>("SHOP_ITEM")
         //Mostrar item
-        shopItem?.let{
-            binding.elementText.text = "${it.name}: ${it.quantity}"
+        shopItem?.let {
+            binding.elementText.text = if (it.quantity != null) {
+                "${it.name}: ${it.quantity}"
+            } else {
+                it.name
+            }
         }
     }
 }
