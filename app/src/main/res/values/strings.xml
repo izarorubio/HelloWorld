@@ -2,6 +2,7 @@
     <string name="app_name">HelloWorld</string>
 
     <!-- TEXTOS DEL MAINACTIVITY -->
+    <string name="helloWorld_button_text">HOLA MUNDO</string>
     <string name="birthday_button_text">TARJETA DE CUMPLEAÑOS</string>
     <string name="list_button_text">LISTA DE LA COMPRA</string>
     <string name="red_button_text">LLAMADA A RED</string>

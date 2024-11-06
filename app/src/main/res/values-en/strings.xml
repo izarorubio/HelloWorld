@@ -2,6 +2,7 @@
     <string name="app_name">HelloWorld</string>
 
     <!-- TEXTOS DEL MAINACTIVITY -->
+    <string name="helloWorld_button_text">HELLO WORLD</string>
     <string name="birthday_button_text">BIRTHDAY CARD</string>
     <string name="list_button_text">SHOPPING LIST</string>
     <string name="red_button_text">NETWORK CALL</string>
@@ -13,7 +14,7 @@
     <string name="toast_name_mandatory">Name field is mandatory</string>
 
     <!-- TEXTOS DEL USUARIOSALUDOACTIVITY -->
-    <string name="saludo_text">¡Hello %1$s, welcome to my new app!</string>
+    <string name="saludo_text">Hello %1$s, welcome to my new app!</string>
     <!-- TEXTOS DEL BIRTHDAYACTIVITY -->
     <string name="happy_birthday_text">HAPPY BIRTHDAY!</string>
     <string name="years_text">42 YEARS!?</string>

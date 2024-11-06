@@ -42,10 +42,7 @@ class UsuarioActivity : AppCompatActivity() {
             } else {
                 // Si el campo no está vacío, crear el Intent para pasar a la otra actividad
                 val intent = Intent(this, UsuarioSaludoActivity::class.java)
-                intent.putExtra(
-                    "usernameKey",
-                    username
-                ) // parámetro1: key única, parámetro2: dato que queremos enviar
+                intent.putExtra("usernameKey", username) // parámetro1: key única, parámetro2: dato que queremos enviar
                 // Empezar la nueva actividad
                 startActivity(intent)
             }

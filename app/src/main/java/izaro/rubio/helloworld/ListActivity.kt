@@ -20,7 +20,6 @@ import izaro.rubio.helloworld.listPackage.ShopItem
 class ListActivity : AppCompatActivity(), ItemListener {
     private lateinit var binding: ActivityListBinding
 
-    //No entiendo pq hay q ponerlo aquí
     private var dataset=mutableListOf(
         ShopItem("patatas", 5),
         ShopItem("huevos", 12)

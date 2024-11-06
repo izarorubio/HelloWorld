@@ -3,11 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#20627A</color>
-    <color name="colorPrimaryVariant">#74A7AE</color>
+    <color name="colorPrimaryVariant">#81BEC5</color>
     <color name="colorOnPrimary">#383232</color>
     <color name="colorSecondary">#F79E6B</color>
     <color name="colorSecondaryVariant">#F7CD82</color>
     <color name="colorOnSecondary">#5B584F</color>
-
-
 </resources>

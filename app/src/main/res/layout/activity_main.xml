@@ -19,7 +19,7 @@
         android:layout_marginLeft= "16sp"
         android:padding="30sp"
         android:backgroundTint="@color/colorPrimaryVariant"
-        android:text="Hello World"/>
+        android:text="@string/helloWorld_button_text"/>
 
     <Button
         android:id="@+id/birthday_button"
